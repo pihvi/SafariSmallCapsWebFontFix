@@ -7,11 +7,16 @@
     <script type="text/javascript" src="jquery-1.5.2.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Lobster&amp;subset=latin' rel='stylesheet' type='text/css'>
     <style type="text/css">
-        h2 {
+        li {
             font-size: 64px;
             margin: 0;
             padding: 0;
             font-family: "Lobster";
+        }
+
+        ol {
+            margin-left: 3em;
+            list-style: decimal;
         }
 
         .smallcaps {
@@ -21,14 +26,15 @@
     <script type="text/javascript" src="safariSmallCapsWebFontFix.js"></script>
 </head>
 <body>
-<h2>Sämple TÜtle - 123%&/==)(/&¤# JeEs</h2>
-
-<h2 style="font-variant:small-caps;">Sämple TÜtle - 123%&/==)(/&¤# JeEs</h2>
-
-<h2 class="smallcaps">Sämple TÜtle - 123%&/==)(/&¤# JeEs</h2>
+<ol>
+    <li>Sämple TÜtle - 123%&/==)(/&¤# JeEs</li>
+    <li style="font-variant:small-caps;">Sämple TÜtle - 123%&/==)(/&¤# JeEs</li>
+    <li class="smallcaps">Sämple TÜtle - 123%&/==)(/&¤# JeEs</li>
+</ol>
+If the bug is present number one should have different font from two and three where the fix has been applied.
 <script type="text/javascript">
     $(function() {
-        $("h2:first").css("font-variant", "small-caps");
+        $("li:first").css("font-variant", "small-caps");
     });
 </script>
 </body>
