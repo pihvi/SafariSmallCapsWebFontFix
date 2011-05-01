@@ -13,12 +13,23 @@
             padding: 0;
             font-family: "Lobster";
         }
+
+        .smallcaps {
+            font-variant: small-caps;
+        }
     </style>
     <script type="text/javascript" src="safariSmallCapsWebFontFix.js"></script>
 </head>
 <body>
-<h2 id="withoutSmallCaps">Sämple TÜtle - 123%&/==)(/&¤# JeEs</h2>
+<h2>Sämple TÜtle - 123%&/==)(/&¤# JeEs</h2>
 
-<h2 id="withSmallCaps" style="font-variant:small-caps;">Sämple TÜtle - 123%&/==)(/&¤# JeEs</h2>
+<h2 style="font-variant:small-caps;">Sämple TÜtle - 123%&/==)(/&¤# JeEs</h2>
+
+<h2 class="smallcaps">Sämple TÜtle - 123%&/==)(/&¤# JeEs</h2>
+<script type="text/javascript">
+    $(function() {
+        $("h2:first").css("font-variant", "small-caps");
+    });
+</script>
 </body>
 </html>

@@ -23,7 +23,7 @@ function wrapLowerCharsWithTag(text, tag) {
     }
 }
 function applyFix(elem) {
-    elem.css("font-variant", "");
+    elem.css("font-variant", "normal");
     elem.html(wrapLowerCharsWithTag(elem.text(), "small"));
 }
 function iterateAllElements() {
